@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BookMyShowTesting" duration-ms="432538" started-at="2021-05-25T04:47:14Z" finished-at="2021-05-25T04:54:27Z">
+    <groups>
+    </groups>
+    <test name="FunctionalTesting" duration-ms="432538" started-at="2021-05-25T04:47:14Z" finished-at="2021-05-25T04:54:27Z">
+      <class name="testSuites.BookMyShowTest">
+        <test-method status="PASS" signature="openBrowserAndLaunchUrl()[pri:0, instance:testSuites.BookMyShowTest@7c417213]" name="openBrowserAndLaunchUrl" is-config="true" duration-ms="12052" started-at="2021-05-25T04:47:14Z" finished-at="2021-05-25T04:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchUrl -->
+        <test-method status="PASS" signature="smokeTest()[pri:0, instance:testSuites.BookMyShowTest@7c417213]" name="smokeTest" duration-ms="20333" started-at="2021-05-25T04:47:26Z" finished-at="2021-05-25T04:47:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeTest -->
+        <test-method status="PASS" signature="regressionTest()[pri:1, instance:testSuites.BookMyShowTest@7c417213]" name="regressionTest" duration-ms="15676" started-at="2021-05-25T04:47:47Z" finished-at="2021-05-25T04:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regressionTest -->
+        <test-method status="FAIL" signature="reTest()[pri:2, instance:testSuites.BookMyShowTest@7c417213]" name="reTest" duration-ms="383892" started-at="2021-05-25T04:48:02Z" finished-at="2021-05-25T04:54:26Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 50.000
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3QD5018', ip: '192.168.42.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\KUNDAN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 438988b11aaebafe12d77996d2e5284a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 50.000
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3QD5018', ip: '192.168.42.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\KUNDAN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 438988b11aaebafe12d77996d2e5284a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.BookMyShow.sports(BookMyShow.java:85)
+at testSuites.BookMyShowTest.reTest(BookMyShowTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testSuites.BookMyShowTest@7c417213]" name="closeBrowser" is-config="true" duration-ms="453" started-at="2021-05-25T04:54:26Z" finished-at="2021-05-25T04:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testSuites.BookMyShowTest -->
+      <class name="base.Base">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:base.Base@6107227e]" name="setUp" is-config="true" duration-ms="18170" started-at="2021-05-25T04:46:56Z" finished-at="2021-05-25T04:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="teadDown()[pri:0, instance:base.Base@6107227e]" name="teadDown" is-config="true" duration-ms="819" started-at="2021-05-25T04:54:27Z" finished-at="2021-05-25T04:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+      </class> <!-- base.Base -->
+    </test> <!-- FunctionalTesting -->
+  </suite> <!-- BookMyShowTesting -->
+</testng-results>

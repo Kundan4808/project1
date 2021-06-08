@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BookMyShowTesting]">
+  <test thread-count="5" name="FunctionalTesting(failed)">
+    <classes>
+      <class name="testSuites.BookMyShowTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reTest"/>
+          <include name="openBrowserAndLaunchUrl"/>
+        </methods>
+      </class> <!-- testSuites.BookMyShowTest -->
+    </classes>
+  </test> <!-- FunctionalTesting(failed) -->
+</suite> <!-- Failed suite [BookMyShowTesting] -->
